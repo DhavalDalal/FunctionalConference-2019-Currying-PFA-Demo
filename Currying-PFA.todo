@@ -1,0 +1,15 @@
+Making Your Program Spicy - Currying and Partially Applied Function (PFA):
+* Currying 
+  * What it is?
+  * Why Currying?
+  * How does it make programming spicier?
+  * Some more spice - Curried DI
+  * Make our own curry in Java
+  
+* Partially Applied Function (PFA)
+  * Not in Java, Lets look at Scala
+  * Clojure
+
+* Currying/PFA in other Languages
+  * Haskell
+  * Groovy

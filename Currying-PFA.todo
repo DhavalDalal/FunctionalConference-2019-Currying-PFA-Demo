@@ -7,9 +7,20 @@ Making Your Program Spicy - Currying and Partially Applied Function (PFA):
   * Make our own curry in Java
   
 * Partially Applied Function (PFA)
-  * Not in Java, Lets look at Scala
-  * Clojure
+  * Java does not have PFA, Lets look at Scala
 
 * Currying/PFA in other Languages
   * Haskell
+  * Clojure
   * Groovy
+
+Reflections:
+* You curry strictly from left-to-right
+* We don’t have to provide all the arguments to the function at one go! This is partially applying the function.  
+* In other words, currying enables Partial Function Application, a.k.a - Partially Applied Function (PFA).
+* "ad-hoc PFA" is practically more powerful than currying in some ways. With currying, you have to curry strictly from left to right, with PFA you can do ad-hoc application of args
+* In a language that deals well with PFA, you won’t really miss currying, because you’ll use PFA where you would have used currying.
+
+References:
+* CodeJugalbandi (http://codejugalbandi.org) - Ryan Lemmer and Dhaval Dalal.
+

@@ -7,7 +7,15 @@
 
 (new-ms "Ada" "Lovelace")
 
-(def new-dalal #(new-person %1 %2 "Dalal"))
+(def new-ms-ada (partial new-person "Ms" "Ada"))
+(new-ms-ada "LOVELACE")
 
-(new-dalal "Ms." "Tesla")
-(new-dalal "Mrs." "Prutha")
+(def new-shah (fn [sal fname]
+    (new-person sal fname "Shah")))
+    
+(new-shah "Mr." "Mahendra")    
+
+(def new-ada #(new-person %1 "Ada" %2))
+
+(new-ada "Ms." "Lovelace")
+(new-ada "Mrs." "??")

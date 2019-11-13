@@ -1,8 +1,8 @@
-def merge(x: String)(y: Int) = x + y.toString
+def merge1(x: String, y: Int) = x + y.toString
+def merge2(x: String)(y: Int) = x + y.toString
 
 // open -a iTerm
 // scala
-
 
 // Partially Applied Function (PFA)
 def greet(salutation: String, fname: String, lname: String) = s"$salutation. $fname $lname"

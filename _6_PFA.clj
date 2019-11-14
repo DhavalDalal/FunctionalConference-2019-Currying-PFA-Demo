@@ -19,3 +19,11 @@
 
 (new-ada "Ms." "Lovelace")
 (new-ada "Mrs." "??")
+
+; (def filter-odds (partial filter odd?))
+(def filter-odds #(filter odd? %1))
+(println (filter-odds (range 10)))
+
+; (def filter-evens (partial filter even?))
+(def filter-evens #(filter even? %1))
+(println (filter-evens (range 10)))

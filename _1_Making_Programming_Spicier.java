@@ -31,7 +31,7 @@ class Authoriser {
     System.out.println("Authorizing Request#" + request.id);
     // Some auth code here which guards the request.
     // On success, the line below is executed.
-    return repo.findById(Integer.parseInt(request.get("id")));
+    return repo.findById(Integer.parseInt(request.get("customer_id")));
   }
 }
 
@@ -41,14 +41,14 @@ class _1_Making_Programming_Spicier {
     var repo = new CustomerRepository();
 
     var request1 = new Request(1) {{
-      set("id", "10");
+      set("customer_id", "10");
     }};
 
     var customer1 = authoriser.authorise(repo, request1);
     System.out.println(customer1);
 
     var request2 = new Request(2) {{
-      set("id", "30");
+      set("customer_id", "30");
     }};
     var customer2 = authoriser.authorise(repo, request2);
     System.out.println(customer2);

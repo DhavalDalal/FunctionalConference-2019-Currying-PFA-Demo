@@ -9,10 +9,9 @@ def greet(salutation: String, fname: String, lname: String) = s"$salutation. $fn
 println(greet("Mr", "Dhaval", "Dalal"))
 
 def new_ms = greet("Ms", _: String, _: String)
-println(new_ms("Sharvari", "Dalal"))
+println(new_ms("Ada", "Lovelace"))
 
 def new_dalal = greet(_: String, _: String, "Dalal")
-println(new_dalal("Mrs", "Prutha"))
-
+println(new_dalal("Mr", "Shantilal"))
 
 println("Done!")

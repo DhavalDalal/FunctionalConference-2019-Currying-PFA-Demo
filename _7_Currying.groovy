@@ -8,10 +8,10 @@ def odds = filterList.curry(even >> not)  // even andThen not
 println odds(0..10) // [1, 3, 5, 7, 9]
 
 def merge = { x, y, z ->
-/*  println "arg0: x = $x"
+  println "arg0: x = $x"
   println "arg1: y = $y"
   println "arg2: z = $z"
-*/  "$x$y$z"
+  "$x$y$z"
 }
 
 println merge.curry(10)('Hello', new Date()) // 10Hello<Date>
